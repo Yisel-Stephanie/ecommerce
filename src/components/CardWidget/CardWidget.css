@@ -1,0 +1,9 @@
+.icon {
+  border-radius: 50%;
+  font-size: 60px;
+  background-color: rgb(169, 120, 197);
+  color: rgb(7, 7, 7);
+}
+.icon:hover {
+  transform: scale(1.1);
+}

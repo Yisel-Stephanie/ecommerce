@@ -1,11 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-// import './components/Navbar'
-import Navbar from './components/Navbar';
+import React from 'react';
+import Navbar from './components/NavBar/Navbar';
+
 
 function App() {
   return (
-    <Navbar />
+    <>
+      <Navbar />
+
+    </>
   );
 }
 
