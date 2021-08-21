@@ -1,5 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { ItemCount } from '../ItemCount/ItemCount';
+
 const Item = ({ papa }) => {
+    let stock = 5
+    const agregar = (counter) => {
+        if (counter <= stock) {
+            alert(`Agrego ` + counter + ` Articulos `)
+        }
+    };
     return (
         <div class="d-inline-flex p-3">
             <div className="card" style={{ width: '300px' }} >
@@ -12,6 +20,7 @@ const Item = ({ papa }) => {
                     <span>{papa.span}</span>
                     <a href="#" className="btn btn-primary">Go somewhere</a>
                 </div>
+                <ItemCount stock={stock} onAdd={agregar} ></ItemCount>
             </div>
         </div>
     )
